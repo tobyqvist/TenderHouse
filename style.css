@@ -1,0 +1,287 @@
+@import "reboot.css";
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  background: #fff;
+}
+
+/*
+body {
+  background-image: url(img/Citylights.jpg);
+  background-size: cover;
+}
+*/
+
+.anim-body {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background: url(img/pexels-dương-nhân-1529881.jpg) center center;
+  background-size: cover;
+}
+
+.fog-anim {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background: url(img/fog2.png) repeat-x;
+  background-size: 200% auto;
+  background-position: 0 bottom;
+  animation: fogAnim 60s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes fogAnim {
+  0% {
+    background-position: -200% bottom;
+  }
+  100% {
+    background-position: 0% bottom;
+  }
+}
+
+.glitch {
+  z-index: 1;
+  color: rgb(0, 0, 0);
+  padding-top: 3%;
+  margin: 0;
+  margin-left: 7%;
+  font-size: 5em;
+  font-weight: 700;
+  text-transform: uppercase;
+  position: relative;
+  font-family: "Megrim", cursive;
+  text-shadow: 0.05em 0 0 rgba(31, 31, 31, 0.904),
+    -0.025em -0.05em 0 rgba(124, 124, 123, 0.904),
+    0.025em 0.05em 0 rgba(204, 204, 207, 0.75);
+
+  animation: glitch 1000ms infinite;
+}
+
+.glitch span {
+  padding-top: 3%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+}
+
+.glitch span:first-child {
+  animation: glitch 650ms infinite;
+  clip-path: polygon(0 0, 100% 0, 100% 45%, 0 45%);
+  transform: translate(-0.025em, -0.0125em);
+  opacity: 0.8;
+}
+.glitch span:last-child {
+  animation: glitch 375ms infinite;
+  clip-path: polygon(0 80%, 100% 60%, 100% 100%, 0 100%);
+  transform: translate(0.0125em, 0.025em);
+  opacity: 0.8;
+}
+
+@keyframes glitch {
+  0% {
+    text-shadow: 0.05em 0 0 rgba(31, 31, 31, 0.904),
+      -0.025em -0.05em 0 rgba(124, 124, 123, 0.904),
+      0.025em 0.05em 0 rgba(204, 204, 207, 0.75);
+  }
+  14% {
+    text-shadow: 0.05em 0 0 rgba(31, 31, 31, 0.904),
+      -0.025em -0.05em 0 rgba(124, 124, 123, 0.904),
+      0.025em 0.05em 0 rgba(204, 204, 207, 0.75);
+  }
+  15% {
+    text-shadow: -0.05em -0.025em 0 rgba(31, 31, 31, 0.904),
+      0.025em 0.025em 0 rgba(124, 124, 123, 0.904),
+      -0.05em -0.05em 0 rgba(204, 204, 207, 0.75);
+  }
+  49% {
+    text-shadow: -0.05em -0.025em 0 rgba(31, 31, 31, 0.904),
+      0.025em 0.025em 0 rgba(124, 124, 123, 0.904),
+      -0.05em -0.05em 0 rgba(204, 204, 207, 0.75);
+  }
+  50% {
+    text-shadow: 0.025em 0.05em 0 rgba(31, 31, 31, 0.904),
+      0.05em 0 0 rgba(124, 124, 123, 0.904),
+      0em -0.05em 0 rgba(204, 204, 207, 0.75);
+  }
+  99% {
+    text-shadow: 0.025em 0.05em 0 rgba(31, 31, 31, 0.904),
+      0.05em 0 0 rgba(124, 124, 123, 0.904),
+      0em -0.05em 0 rgba(204, 204, 207, 0.75);
+  }
+  100% {
+    text-shadow: -0.025em 0 0 rgba(31, 31, 31, 0.904),
+      -0.025em -0.025em 0 rgba(124, 124, 123, 0.904),
+      -0.025em -0.05em 0 rgba(204, 204, 207, 0.75);
+  }
+}
+
+.arrow {
+  position: fixed;
+  right: 15%;
+  top: 25%;
+  color: #fff;
+}
+
+.sub-tekst {
+  position: fixed;
+  right: 12%;
+  color: #fff;
+  font-family: "Amatic SC", cursive;
+}
+
+video {
+  margin-top: 5%;
+  box-shadow: 5px 5px 10px 5px #000000;
+}
+
+.social {
+  position: fixed;
+  top: 90%;
+  right: 0;
+  z-index: 1;
+  transform: translateY(-50%);
+}
+
+.social ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  transform: translateX(216px);
+}
+
+.social ul li {
+  display: block;
+  margin: 5px;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 300px;
+  text-align: left;
+  padding: 10px;
+  border-radius: 30px 0 0 30px;
+  transition: all 1s;
+}
+
+.social ul li:hover {
+  transform: translateX(-110px);
+}
+
+.social ul li.facebook:hover {
+  background-color: #3b5999;
+}
+
+.social ul li.instagram:hover {
+  background-color: #e4405f;
+}
+
+.social ul li a {
+  color: white;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+.social ul li i {
+  text-align: center;
+  margin-left: 14px;
+  color: black;
+  background-color: white;
+  padding: 10px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 30px;
+  transform: rotate(0deg);
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.social ul li:hover i {
+  transform: rotate(-360deg);
+  transition: all 1s;
+}
+
+.color {
+  animation-name: fade;
+  position: fixed;
+}
+
+.fadeInOut {
+  top: 0;
+  -webkit-animation: fadeinout 10s linear forwards;
+  animation: fadeinout 10s linear forwards;
+  opacity: 0;
+  animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes fadeinout {
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeinout {
+  50% {
+    opacity: 1;
+  }
+}
+
+.knapper {
+  display: flex;
+  justify-content: center;
+  z-index: 1;
+  margin-top: 20px;
+  left: 25%;
+  position: fixed;
+}
+
+button {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  padding: 12px;
+  text-align: center;
+  font-family: "Lexend Mega", sans-serif;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  border: 1.7px solid #c96a30;
+  border-radius: 50px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+  margin: 7px;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.knapb {
+  border: 1.7px solid #244673;
+  z-index: 1;
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  60%,
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  40% {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+
+  80% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+}
+
+button:hover {
+  animation: bounce 1s;
+}
