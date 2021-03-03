@@ -122,16 +122,45 @@ body {
   }
 }
 
-.arrow {
+.arrow1 {
   position: fixed;
   right: 15%;
   top: 25%;
   color: #fff;
 }
 
-.sub-tekst {
+.arrow2 {
+  position: fixed;
+  right: 10%;
+  top: 75%;
+  color: #fff;
+}
+
+.arrow3 {
+  position: fixed;
+  left: 15%;
+  top: 65%;
+  color: #fff;
+}
+
+.music-text {
   position: fixed;
   right: 12%;
+}
+
+.social-text {
+  position: fixed;
+  right: 10%;
+  top: 70%;
+}
+
+.streamin-text {
+  position: fixed;
+  left: 15%;
+  top: 60%;
+}
+
+.sub-tekst {
   color: #fff;
   font-family: "Amatic SC", cursive;
 }
@@ -208,6 +237,15 @@ video {
 .color {
   animation-name: fade;
   position: fixed;
+  top: 15%;
+  left: -25%;
+}
+
+.color2 {
+  animation-name: fade;
+  position: fixed;
+  top: -5%;
+  right: -5%;
 }
 
 .fadeInOut {
