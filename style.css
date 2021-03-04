@@ -353,14 +353,18 @@ button:hover {
     margin-top: 70px;
     display: grid;
     position: initial;
+    width: 370px;
   }
+
+a {
+  z-index: 1;
+}
 
   button {
     font-size: 16px;
-  }
-
-  .knapb {
-    width: 250px;
+    width: -webkit-fill-available;
+    padding-left: 60px;
+    padding-right: 60px;
   }
 
   .arrow1 {
