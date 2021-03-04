@@ -246,7 +246,7 @@ video {
   transition: all 1s;
 }
 
-/* Farvebobler */
+/* Kilde til fade ind og ud effekt på farveboblerne: https://stackoverflow.com/questions/30125705/css-how-to-make-an-element-fade-in-and-then-fade-out */
 .color {
   animation-name: fade;
   position: fixed;
@@ -297,7 +297,6 @@ button {
   padding: 12px;
   text-align: center;
   font-family: "Lexend Mega", sans-serif;
-  text-decoration: none;
   display: inline-block;
   font-size: 12px;
   border: 1.7px solid #c96a30;
@@ -313,6 +312,7 @@ button {
   z-index: 1;
 }
 
+/* Animation til knappen: https://1stwebdesigner.com/20-amazing-pure-css-animated-buttons/https://1stwebdesigner.com/20-amazing-pure-css-animated-buttons/ */
 @keyframes bounce {
   0%,
   20%,
