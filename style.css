@@ -170,6 +170,7 @@ video {
   box-shadow: 5px 5px 10px 5px #000000;
   width: 50%;
   height: 50%;
+  z-index: 1;
 }
 
 .social {
@@ -326,56 +327,55 @@ button:hover {
 }
 
 @media only screen and (max-width: 600px) {
- .glitch {
-   font-size: 47.5px;
- }
-
-
- video {
-   width: 95%;
-   height: 50%;
-   margin-top: 60px;
- }
-
-.knapper {
-  margin-top: 70px;
-  display: grid;
-  position: initial;
-}
-
-button {
-  font-size: 16px;
-}
-
-.knapb {
-  width: 250px;
-}
-
-.arrow1 {
-  display: none;
-}
-
-.arrow2 {
-  display: none;
-}
-
-.arrow3 {
-  display: none;
-}
-
-.music-text {
-  margin-top: 50px;
-  right: 32%;
-}
-
-.social-text {
-  display: none;
-}
-
-.streamin-text {
-  top: 39%;
-  left: 0%;
-  text-align: center;
-  position: inherit;
-}
+  .glitch {
+    font-size: 47.5px;
   }
+
+  video {
+    width: 95%;
+    height: 50%;
+    margin-top: 60px;
+  }
+
+  .knapper {
+    margin-top: 70px;
+    display: grid;
+    position: initial;
+  }
+
+  button {
+    font-size: 16px;
+  }
+
+  .knapb {
+    width: 250px;
+  }
+
+  .arrow1 {
+    display: none;
+  }
+
+  .arrow2 {
+    display: none;
+  }
+
+  .arrow3 {
+    display: none;
+  }
+
+  .music-text {
+    margin-top: 50px;
+    right: 32%;
+  }
+
+  .social-text {
+    display: none;
+  }
+
+  .streamin-text {
+    top: 39%;
+    left: 0%;
+    text-align: center;
+    position: inherit;
+  }
+}
