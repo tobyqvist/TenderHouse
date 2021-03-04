@@ -1,3 +1,4 @@
+/* Generelt */
 @import "reboot.css";
 
 body,
@@ -7,13 +8,7 @@ html {
   background: #fff;
 }
 
-/*
-body {
-  background-image: url(img/Citylights.jpg);
-  background-size: cover;
-}
-*/
-
+/* Baggrund og tågeanimation */
 .anim-body {
   width: 100%;
   height: 100vh;
@@ -46,6 +41,7 @@ body {
   }
 }
 
+/* Fontlogo */
 .glitch {
   z-index: 1;
   color: rgb(0, 0, 0);
@@ -122,27 +118,7 @@ body {
   }
 }
 
-.arrow1 {
-  position: fixed;
-  right: 15%;
-  top: 25%;
-  color: #fff;
-}
-
-.arrow2 {
-  position: fixed;
-  right: 10%;
-  top: 75%;
-  color: #fff;
-}
-
-.arrow3 {
-  position: fixed;
-  left: 15%;
-  top: 65%;
-  color: #fff;
-}
-
+/* Tekst med pile */
 .music-text {
   position: fixed;
   right: 12%;
@@ -165,6 +141,28 @@ body {
   font-family: "Amatic SC", cursive;
 }
 
+.arrow1 {
+  position: fixed;
+  right: 15%;
+  top: 25%;
+  color: #fff;
+}
+
+.arrow2 {
+  position: fixed;
+  right: 10%;
+  top: 75%;
+  color: #fff;
+}
+
+.arrow3 {
+  position: fixed;
+  left: 15%;
+  top: 65%;
+  color: #fff;
+}
+
+/* Musikvideo */
 video {
   margin-top: 5%;
   box-shadow: 5px 5px 10px 5px #000000;
@@ -173,7 +171,8 @@ video {
   z-index: 1;
 }
 
-.social {
+/* Socialmedia knapper */
+.socialmedia {
   position: fixed;
   top: 90%;
   right: 0;
@@ -181,14 +180,14 @@ video {
   transform: translateY(-50%);
 }
 
-.social ul {
+.socialmedia ul {
   list-style: none;
   padding: 0;
   margin: 0;
   transform: translateX(216px);
 }
 
-.social ul li {
+.socialmedia ul li {
   display: block;
   margin: 5px;
   background-color: rgba(0, 0, 0, 0.5);
@@ -199,25 +198,25 @@ video {
   transition: all 1s;
 }
 
-.social ul li:hover {
+.socialmedia ul li:hover {
   transform: translateX(-110px);
 }
 
-.social ul li.facebook:hover {
+.socialmedia ul li.facebook:hover {
   background-color: #3b5999;
 }
 
-.social ul li.instagram:hover {
+.socialmedia ul li.instagram:hover {
   background-color: #e4405f;
 }
 
-.social ul li a {
+.socialmedia ul li a {
   color: white;
   text-decoration: none;
   margin-left: 10px;
 }
 
-.social ul li i {
+.socialmedia ul li i {
   text-align: center;
   margin-left: 14px;
   color: black;
@@ -232,11 +231,12 @@ video {
   vertical-align: middle;
 }
 
-.social ul li:hover i {
+.socialmedia ul li:hover i {
   transform: rotate(-360deg);
   transition: all 1s;
 }
 
+/* Farvebobler */
 .color {
   animation-name: fade;
   position: fixed;
@@ -271,6 +271,7 @@ video {
   }
 }
 
+/* Streaming knapper */
 .knapper {
   display: flex;
   justify-content: center;
@@ -326,6 +327,7 @@ button:hover {
   animation: bounce 1s;
 }
 
+/* Mobil størrelse */
 @media only screen and (max-width: 600px) {
   .glitch {
     font-size: 47.5px;
