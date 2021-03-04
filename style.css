@@ -162,6 +162,10 @@ html {
   color: #fff;
 }
 
+.center {
+  text-align: center;
+}
+
 /* Musikvideo */
 video {
   margin-top: 5%;
