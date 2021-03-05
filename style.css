@@ -133,7 +133,7 @@ html {
 .streamin-text {
   position: fixed;
   left: 15%;
-  top: 60%;
+  top: 65%;
 }
 
 .sub-tekst {
@@ -158,7 +158,7 @@ html {
 .arrow3 {
   position: fixed;
   left: 15%;
-  top: 65%;
+  top: 70%;
   color: #fff;
 }
 
@@ -356,9 +356,9 @@ button:hover {
     width: 370px;
   }
 
-a {
-  z-index: 1;
-}
+  a {
+    z-index: 1;
+  }
 
   button {
     font-size: 16px;
